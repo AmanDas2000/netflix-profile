@@ -1,0 +1,336 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-red-600;
+  }
+
+  header {
+    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
+  }
+
+  .font-outline-2 {
+    -webkit-text-stroke: 2px gray;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px white;
+  }
+}
+
+@layer components {
+  .headerLink {
+    @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3];
+  }
+
+  .input {
+    @apply w-full rounded bg-[#333333] px-5 py-3.5 placeholder-[gray] outline-none focus:bg-[#454545];
+  }
+
+  .bannerButton {
+    @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl;
+  }
+
+  .modalButton {
+    @apply flex h-11 w-11 items-center justify-center rounded-full border-2 border-[gray] bg-[#2a2a2a]/60 transition hover:border-white hover:bg-white/10;
+  }
+
+  .membershipLink {
+    @apply cursor-pointer text-blue-500 hover:underline ;
+  }
+
+  .planBox {
+    @apply relative mx-1.5 flex h-20 w-[calc(100%/3)] cursor-default items-center justify-center rounded-sm bg-[#e50914] font-semibold shadow after:absolute after:top-full after:left-1/2 after:block after:-translate-x-1/2 after:border-8 after:border-b-0 after:border-transparent after:border-t-[#e50914] after:content-[""] md:h-32 lg:mx-8;
+  }
+
+  /* Table */
+  .tableRow {
+    @apply flex flex-wrap items-center font-medium;
+  }
+
+  .tableDataTitle {
+    @apply w-full p-2.5 text-center text-sm font-normal text-white md:w-2/5 md:p-3.5 md:text-left md:text-base;
+  }
+
+  .tableDataFeature {
+    @apply w-[calc(100%/3)] p-2.5 text-center md:w-[calc(60%/3)] md:p-3.5;
+  }
+
+  /* MUI Menu */
+  .menu {
+    @apply md:hidden;
+  }
+
+  .menu .MuiPaper-root {
+    @apply !absolute !left-0 !rounded-none !border !border-[gray] !bg-black !text-white;
+  }
+
+  .menu .MuiList-root {
+    @apply !p-0;
+  }
+
+  .menu .MuiMenuItem-root {
+    @apply !block !w-72 !py-3.5 !text-center !text-sm !font-light !text-[#b3b3b3] !transition !duration-200 first:cursor-default first:!font-normal first:!text-white hover:!bg-[#11100F];
+  }
+}
+
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid red; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  overflow: hidden;
+}
+
+.background .logo{
+  width: 150px;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  animation: scale 3s ease forwards;
+  animation-delay: 1.7s;
+}
+
+.background .logo .brush1{
+  width: 50px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  animation:height 0.5s ease forwards;
+  animation-delay: 3.7s;
+}
+
+.background .logo .brush1 .color{
+  width: 100%;
+  height: 0%;
+  background-color: rgb(194,0 ,0);
+  position: relative;
+  z-index: 2;
+  animation: moveup 0.5s ease forwards;
+}
+
+.background .logo .brush2{
+  width: 50px;
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.background .logo .brush2 .color2{
+  width: 100%;
+  height: 0%;
+  background-color: rgb(194,0 ,0);
+  animation: moveup 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+.background .logo .brush3{
+  width: 50px;
+  height: 0;
+  position: absolute;
+  z-index: 2;
+  transform: skew(24.4deg);
+  transform-origin: top left;
+  background: red;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.33);
+  animation: moveup 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.lines{
+  width: max-content;
+  height: 100%;
+  display: none;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 0;
+}
+
+.lines .line{
+  width: 1px;
+  height: 100%;
+  background: red;
+  margin-right: 1px;
+  animation: margin 2s linear forwards, bgcolor 0.2s linear forwards;
+  animation-delay: 0.2s;
+}
+
+
+.aman{
+  position: absolute;
+  top:80%;
+}
+
+
+/* forward animation starts */
+
+@keyframes moveup{
+  from {
+      height: 0;
+  }to{
+      height: 220px;
+  }
+}
+
+/* reverse animation */
+
+@keyframes movedown {
+  from {
+      height: 220px;
+  }
+  to {
+      height: 0;
+  }
+}
+
+
+/* main animation lines starts  */
+
+@keyframes opacity {
+  0%{
+      opacity: 1;
+  }100%{
+      opacity: 0;
+  }
+}
+
+@keyframes margin {
+  0%{
+      width: 1px;
+      margin-right: 1px;
+      box-shadow: none;  
+  }20%{
+      width: 15px;
+      margin-right: 20px;
+      margin-left: 45px;
+      box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+  }
+  25%{
+      width: 15px;
+      margin-right: 25px;
+      margin-left: 15px;
+      box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+  }
+  30%{
+      width: 15px;
+      margin-right: 25px;
+      margin-left: 20px;
+      box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+  }
+  40%{
+      width: 15px;
+      margin-right: 35px;
+      margin-left: 50px;
+      box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+  }
+  50%{
+      width: 15px;
+      margin-right: var(--m);
+      margin-left: var(--m);
+      box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+  }
+  60%{
+      width: 40px;
+      margin-right: 2px;
+      margin-left: 20px;
+      box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+  }
+  
+  100%{
+      width: 50px;
+      margin-right: var(--m);
+      box-shadow: 0 0 5px rgb(172, 172, 172), 0 0 50px var(--c);
+  }
+}
+
+
+@keyframes bgcolor{
+  0%{
+      background:red
+  }30%{
+      background: radial-gradient(circle, rgba(255, 0, 0, 1) 75%, rgba(0,0 ,0 0.545) 100%);
+  }100%{
+      background: var(--c);
+  }
+}
+
+@keyframes height {
+  0%{
+      width: 50px;
+      height: 220px;
+  }100%{
+      width: max-content;
+      height: 100vh;
+  }
+}
+
+
+@keyframes scale{
+  0%{
+      transform: scale(1);
+  }100%{
+      transform: scale(1.7);
+  }
+}
+
+
+.fade {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  background: -webkit-linear-gradient(left, 
+              rgba(0,0,0,0.65) 0%, 
+              rgba(0,0,0,0) 20%,
+              rgba(0,0,0,0) 80%,
+              rgba(0,0,0,0.65) 100%
+  );
+}
