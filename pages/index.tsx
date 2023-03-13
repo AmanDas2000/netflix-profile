@@ -180,7 +180,7 @@ const Home: NextPage = () => {
     <div className="relative h-screen w-screen">
       <Head>
         <title>Aman's profile</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png" />
       </Head>
       {index ? (
         <Intro />
