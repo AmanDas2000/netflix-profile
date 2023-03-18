@@ -41,6 +41,7 @@ function Header() {
         <div className='flex items-center space-x-4 text-sm font-light'>
     
         <MagnifyingGlassIcon className='hidden  h-6 w-6 sm:inline'/>
+        {/* //collapse to a menu */}
         <p className='hidden lg:inline'>Make your own</p>
         <BellIcon className='h-6 w-6'/>
         <Link href='/account'>

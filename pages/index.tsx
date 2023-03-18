@@ -27,6 +27,8 @@ const arr = [
       • Worked on baskets and SIP module<br/>`,
     imageUrl:
       'https://imageio.forbes.com/specials-images/imageserve/5ff3492e056b3292f9c39749/0x0.jpg?format=jpg&width=1200',
+    startDate:'Mar 21',
+  endDate:'Arp 22'
   },
   {
     name: 'Microsoft',
@@ -42,7 +44,9 @@ const arr = [
     • Worked on baskets and SIP module<br/>`,
     imageUrl:
       'https://www.cnet.com/a/img/resize/f92ae43457ac52e0b761737181264a82aa0765bb/hub/2019/02/04/8311b046-6f2b-4b98-8036-e765f572efad/msft-microsoft-logo-2-3.jpg?auto=webp&fit=crop&height=675&width=1200',
-  },
+      startDate:'Mar 21',
+      endDate:'Arp 22'
+    },
   {
     name: 'Google',
     designation: 'Software Engineer 1',
@@ -57,6 +61,8 @@ const arr = [
     • Worked on baskets and SIP module<br/>`,
     imageUrl:
       'https://dam.nmhmedia.sk/image/cd21770f-6da6-45d1-957a-7c183cb556f6_phpbbgdhj.jpg/960/540',
+      startDate:'Mar 21',
+  endDate:'Arp 22'
   },
   {
     name: 'Apple',
@@ -72,6 +78,8 @@ const arr = [
     • Worked on baskets and SIP module<br/>`,
     imageUrl:
       'https://youthincmag.com/wp-content/uploads/2018/04/apple-office.jpg',
+      startDate:'Mar 21',
+  endDate:'Arp 22'
   },
   {
     name: 'Amazon',
@@ -87,6 +95,8 @@ const arr = [
     • Worked on baskets and SIP module<br/>`,
     imageUrl:
       'https://static.toiimg.com/thumb/msid-98031821,width-400,resizemode-4/98031821.jpg',
+      startDate:'Mar 21',
+  endDate:'Arp 22'
   },
   {
     name: 'Uber',
@@ -102,6 +112,8 @@ const arr = [
     • Worked on baskets and SIP module<br/>`,
     imageUrl:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMLdEPeumjNOhTKtNYjviEqb10yjnj8P39_Q&usqp=CAU',
+      startDate:'Mar 21',
+  endDate:'Arp 22'
   },
 ]
 
@@ -109,7 +121,7 @@ const arr = [
 const skills = [
   {
     name: 'React',
-    imageUrl: 'https://reactjs.org/logo-og.png',
+    imageUrl: 'https://ionicframework.com/docs/icons/logo-react-icon.png',
   },
   {
     name: 'Redux',
@@ -194,7 +206,7 @@ const Home: NextPage = () => {
               <Row title={'Experience'} movies={arr} type='square'/>
               <Row title={'Skills'} movies={skills} type='circle'/>
               <Row title={'Projects'} movies={arr} type='square'/>
-              <Row title={'Projects'} movies={arr} type='square'/>
+              <Row title={'Achievements'} movies={arr} type='square'/>
 
             </section>
           </main>

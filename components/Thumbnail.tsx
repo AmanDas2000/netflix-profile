@@ -8,9 +8,11 @@ interface Props {
     designation:string
     detail: string 
     imageUrl:string
+    startDate:string
+    endDate:string
 }
 
-function Thumbnail({name,designation,detail,imageUrl}:Props) {
+function Thumbnail({name,designation,detail,imageUrl,startDate,endDate}:Props) {
     const [modal, setModal] = React.useState(false);
   return (
     <div>
@@ -21,6 +23,8 @@ function Thumbnail({name,designation,detail,imageUrl}:Props) {
         designation={designation}
         detail={detail}
         imageUrl={imageUrl}
+        startDate={startDate}
+        endDate={endDate}
       />
 
       <div

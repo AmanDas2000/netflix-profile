@@ -2,12 +2,16 @@ import { InformationCircleIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import React,{useState,useEffect} from 'react'
 import { FaPlay } from 'react-icons/fa'
+import {AiOutlineInfoCircle} from 'react-icons/ai'
+import ModalComponent from './ModalComponent'
+import ModalComponentBanner from './ModalComponentBanner'
 
 
 
 function Banner() {
 
   const [index, setIndex] = useState(0);
+  const [modal, setModal] = useState(false);
   useEffect(() => {
     const intervalDelayMilliseconds = 5000;
     const interval = setInterval(() => {
@@ -26,6 +30,16 @@ function Banner() {
   
   return (
     <div className="flex flex-col space-y-2 pt-20 pb-10 md:space-y-4 lg:h-[60vh] lg:justify-end bg-blend-darken">
+      <ModalComponentBanner
+        state={modal}
+        change={setModal}
+        name={"Aman Das"}
+        designation={"Intern @ Oracle"}
+        detail={"I am a final year student constantly learning and evolving at software development and I ❤️ JavaScript. I have freelance and internship experience with full stack development."}
+        imageUrl={"https://lh3.googleusercontent.com/pw/AMWts8Bb8x7b8yywTbWudcP2XTy5uX5yoQXDVsG6B650BBFZHD2EtuphlZCTELrIbF76nxi1Sry1TX_PHFLqNqcRBxP2CFcTvcwONVRmQFmQB0J6mVWVbbOddM-888mxFgQ2zGFDNsieSIvFPwDv_cx4kxkymA=w2096-h1578-s-no?authuser=0"}
+        startDate={''}
+        endDate={''}
+      />
       <div className="-z-30 absolute top-0 left-0 h-[95vh] w-screen opacity-60">
         <Image
           layout="fill"
@@ -52,13 +66,13 @@ function Banner() {
       </div>
 
       <div className="flex space-x-3 pt-3">
-        <button className="bannerButton bg-white text-black">
+        {/* <button className="bannerButton bg-white text-black" onClick={()=>{setModal(true)}}>
           <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" />
           Play
-        </button>
+        </button> */}
 
-        <button className="bannerButton bg-[gray]/70" onClick={() => {}}>
-          <InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8" /> coffee?
+        <button className="bannerButton bg-white text-black" onClick={() => {setModal(true)}}>
+          <FaPlay className="h-5 w-5 md:h-8 md:w-8" /> coffee?
         </button>
       </div>
     </div>

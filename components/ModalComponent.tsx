@@ -14,14 +14,12 @@ interface Props {
   designation:string
   detail: string 
   imageUrl:string
+  startDate:string
+  endDate:string
 }
 
-function ModalComponent({state,change,name,designation,detail,imageUrl}:Props) {
+function ModalComponent({state,change,name,designation,detail,imageUrl,startDate,endDate}:Props) {
   
-  const startDate='Mar 21';
-  const endDate='Arp 22';
-
-
   return (
     <Modal
       open={state}
@@ -37,14 +35,14 @@ function ModalComponent({state,change,name,designation,detail,imageUrl}:Props) {
         >
           <XMarkIcon className="h-6 w-6" />
         </button>
-        <div className="relative h-28 min-w-[180px] cursor-pointer transition duration-200 ease-out md:h-44 md:min-w-[260px] ">
+        {imageUrl?<div className="relative h-28 min-w-[180px] cursor-pointer transition duration-200 ease-out md:h-52 md:min-w-[260px] ">
           <Image
             src={imageUrl}
             className=" object-cover "
             layout="fill"
             alt="thumnail"
           />
-        </div>
+        </div>:null}
 
         <div className="bg-[#141414] rounded-b-xl px-5 pt-3 pb-10">
           <div className="flex w-full justify-between pl-2 pt-7">
@@ -57,9 +55,9 @@ function ModalComponent({state,change,name,designation,detail,imageUrl}:Props) {
                 <FaGit className='h-4 w-4'/>
               </button>
             </h1>
-            <h1 className="font-light text-base md:text-xl lg:text-xl">
+            {startDate?<h1 className="font-light text-base md:text-xl lg:text-xl">
               {startDate} - {endDate}
-            </h1>
+            </h1>:null}
           </div>
 
           <p className="pl-2 pb-2 pt-2 max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-l lg:text-l">
