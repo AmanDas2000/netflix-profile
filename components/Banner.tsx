@@ -36,7 +36,7 @@ function Banner() {
         name={"Aman Das"}
         designation={"Intern @ Oracle"}
         detail={"I am a final year student constantly learning and evolving at software development and I ❤️ JavaScript. I have freelance and internship experience with full stack development."}
-        imageUrl={"https://lh3.googleusercontent.com/pw/AMWts8Bb8x7b8yywTbWudcP2XTy5uX5yoQXDVsG6B650BBFZHD2EtuphlZCTELrIbF76nxi1Sry1TX_PHFLqNqcRBxP2CFcTvcwONVRmQFmQB0J6mVWVbbOddM-888mxFgQ2zGFDNsieSIvFPwDv_cx4kxkymA=w2096-h1578-s-no?authuser=0"}
+        imageUrl={"https://media.licdn.com/dms/image/C5603AQEEQ27cMDodZg/profile-displayphoto-shrink_400_400/0/1629777355069?e=1684368000&v=beta&t=ICj8sOZUgaeUqUClSYE7fxssEBYgMau6xxOEnQJ7pvg"}
         startDate={''}
         endDate={''}
       />
