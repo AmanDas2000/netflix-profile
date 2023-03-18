@@ -14,14 +14,14 @@ function CircularThumbnail({name,designation,detail,imageUrl,id}:Props) {
     
   return (
     <div>
-      <div className="flex justify-end min-w-[13rem] align-middle overflow-y-clip">
+      <div className="flex justify-end min-w-[9rem] md:min-w-[13rem] align-middle overflow-y-clip">
         <div>
-          <h1 className="text-[10.5rem] font-outline-2 text-black font-bold leading-[8rem]">
+          <h1 className="leading-[6rem] text-[7.5rem] md:text-[10.5rem] font-outline-2 text-black font-bold md:leading-[8rem]">
             {id}
           </h1>
         </div>
         <div
-          className={`relative h-32 w-32 cursor-pointer transition duration-200 ease-out md:h-32 md:w-32 my-auto ml-[-2rem]`}
+          className={`relative h-24 w-24 cursor-pointer transition duration-200 ease-out md:h-32 md:w-32 my-auto ml-[-1.5rem]`}
         >
           <Image
             src={imageUrl}

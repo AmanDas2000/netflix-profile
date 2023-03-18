@@ -26,7 +26,7 @@ function ModalComponent({state,change,name,designation,detail,imageUrl,startDate
       onClose={() => change(false)}
       aria-labelledby="child-modal-title"
       aria-describedby="child-modal-description"
-      className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-4xl overflow-hidden overflow-y-scroll rounded-xl scrollbar-hide md:mt-24"
+      className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full mt-12 md:mt-none  max-w-4xl overflow-hidden overflow-y-scroll rounded-xl scrollbar-hide md:mt-24"
     >
       <div>
         <button
@@ -48,12 +48,12 @@ function ModalComponent({state,change,name,designation,detail,imageUrl,startDate
           <div className="flex w-full justify-between pl-2 pt-7">
             <h1 className="flex justify-between w-[25%] align-middle text-l font-bold md:text-2xl lg:text-2xl">
               <div>{name}</div>
-              <button className="modalButton h-8 w-8">
+              {/* <button className="modalButton h-8 w-8">
                 <FaBook className='h-4 w-4'/>
               </button>
               <button className="modalButton h-8 w-8">
                 <FaGit className='h-4 w-4'/>
-              </button>
+              </button> */}
             </h1>
             {startDate?<h1 className="font-light text-base md:text-xl lg:text-xl">
               {startDate} - {endDate}

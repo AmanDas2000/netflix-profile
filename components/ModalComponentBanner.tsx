@@ -26,18 +26,18 @@ function ModalComponentBanner({state,change,name,designation,detail,imageUrl,sta
       onClose={() => change(false)}
       aria-labelledby="child-modal-title"
       aria-describedby="child-modal-description"
-      className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-4xl overflow-hidden overflow-y-scroll rounded-xl scrollbar-hide md:mt-24"
+      className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full mt-12 md:mt-none max-w-4xl overflow-hidden overflow-y-scroll rounded-xl scrollbar-hide md:mt-24"
     >
-      <div className="flex w-full bg-[#141414] min-h-[50%] rounded-xl justify-evenly align-middle">
+      <div className="flex w-full bg-[#141414] min-h-[50%] rounded-xl justify-evenly align-middle flex-wrap">
         <button
           className="modalButton absolute right-5 top-5 !z-40 h-9 w-9 border-none bg-[#181818] hover:bg-[#181818]"
           onClick={() => change(false)}
         >
           <AiOutlineClose className="h-6 w-6" />
         </button>
-        <div className="w-[50%] h-full flex justify-center align-middle my-auto">
+        <div className="w-[100%] md:w-[50%] h-full flex justify-center align-middle mt-12 md:my-auto">
           {imageUrl ? (
-            <div className="relative h-28 w-28 cursor-pointer transition duration-200 ease-out md:h-52 md:w-52 ">
+            <div className="relative h-52 w-52 cursor-pointer transition duration-200 ease-out md:h-52 md:w-52 ">
               <Image
                 src={imageUrl}
                 className="object-cover rounded-[400px]"
@@ -47,7 +47,7 @@ function ModalComponentBanner({state,change,name,designation,detail,imageUrl,sta
             </div>
           ) : null}
         </div>
-        <div className="w-[50%]">
+        <div className="w-[100%] md:w-[50%]">
           <div className=" rounded-b-xl px-5 pt-3 pb-10">
             <div className="flex w-full justify-between pl-2 pt-7">
               <h1 className="flex justify-between align-middle text-l font-bold md:text-2xl lg:text-2xl">
@@ -69,7 +69,7 @@ function ModalComponentBanner({state,change,name,designation,detail,imageUrl,sta
             >
               {parse(detail)}
             </p>
-            <div className="flex w-[90%] pl-2 pt-4 justify-between text-center text-xs">
+            <div className="flex w-full md:w-[90%] pl-2 pt-7 justify-between text-center text-xs">
               <div className="flex flex-col cursor-pointer hover:scale-105">
                 <AiFillGithub size={40} />
                 <p>Github</p>
