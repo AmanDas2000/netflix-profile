@@ -155,7 +155,7 @@
   background-color: rgb(194,0 ,0);
   position: relative;
   z-index: 2;
-  animation: moveup 0.5s ease forwards,opacity 0.2s ease forwards;
+  animation: moveup 0.5s ease forwards,opacity 0.5s ease forwards;
   animation-delay: 0s,4s;
 }
 
