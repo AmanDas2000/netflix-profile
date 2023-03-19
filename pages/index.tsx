@@ -210,9 +210,9 @@ const Home: NextPage = () => {
 
             </section>
           </main>
+          <Footer/>
         </div>
       )}
-      <Footer/>
     </div>
   )
 }
