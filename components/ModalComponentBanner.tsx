@@ -4,7 +4,7 @@ import Modal from '@mui/material/Modal';
 import Image from 'next/image';
 import { FaBook, FaGit, FaPlay } from 'react-icons/fa';
 import parse from 'html-react-parser';
-import {AiFillGithub,AiFillLinkedin,AiOutlineMail,AiFillProfile,AiOutlineClose} from 'react-icons/ai'
+import {AiFillGithub,AiFillLinkedin,AiFillMail,AiFillProfile,AiOutlineClose} from 'react-icons/ai'
 
 
 interface Props {
@@ -79,7 +79,7 @@ function ModalComponentBanner({state,change,name,designation,detail,imageUrl,sta
                 <p>LinkedIn</p>
               </div>
               <div className="flex flex-col cursor-pointer hover:scale-105">
-                <AiOutlineMail size={40} />
+                <AiFillMail size={40} />
                 <p>Email</p>
               </div>
               <div className="flex flex-col cursor-pointer hover:scale-105">

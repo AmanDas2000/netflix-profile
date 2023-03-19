@@ -13,12 +13,12 @@ const animate=()=>{
     
     setTimeout(() => {
         stick3.style.animation = 'movedown 0.5s ease forwards'
-    }, 3400)
+    }, 3500)
     
     setTimeout(() => {
         stick1.style.animation = 'opacity 0.5s ease forwards'
         lines.style.display = 'flex'
-    }, 3700)
+    }, 4000)
     
     
     // lets create some random lines width random margins or gaps
