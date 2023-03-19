@@ -226,9 +226,11 @@
 @keyframes movedown {
   from {
       height: 220px;
+      display:block;
   }
   to {
       height: 0;
+      display:none;
   }
 }
 
