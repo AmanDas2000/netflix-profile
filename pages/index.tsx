@@ -9,7 +9,6 @@ import Row from '../components/Row'
 import useWindowDimensions from '../hooks/useWindowDimension'
 import parse from 'html-react-parser';
 import Intro from '../intro/Intro'
-import animate from '../intro/animations'
 import Footer from '../components/Footer'
 
 const arr = [
@@ -182,9 +181,6 @@ const Home: NextPage = () => {
   });
 
 
-  useEffect(() => {
-    // animate();
-  }, [])
   
   
   

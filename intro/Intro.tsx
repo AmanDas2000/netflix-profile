@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react'
 const Intro = () => {
   const [index, setIndex] = useState(false)
   useEffect(() => {
-    const intervalDelayMilliseconds = 4000
+    const intervalDelayMilliseconds = 3990
     const interval = setInterval(() => {
       setIndex(true)
     }, intervalDelayMilliseconds)
@@ -28,7 +28,10 @@ const Intro = () => {
     const randomMargin = Math.floor(Math.random() * 1000)
 
     lineElements.push(
-      <div className='line' style={{'--m':`${randomMargin}`,'--c':`${color}`}}>hsadsasd</div>
+      <div className='line' style={{
+        '--c':`${color}`,
+        '--m':`${randomMargin}`
+      }}></div>
     )
   })
 
