@@ -183,7 +183,7 @@ const Home: NextPage = () => {
 
 
   useEffect(() => {
-    animate();
+    // animate();
   }, [])
   
   
