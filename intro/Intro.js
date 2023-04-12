@@ -17,9 +17,9 @@ const Intro = () => {
     return '#' + n.slice(0, 6)
   }
 
-  const lineElements: JSX.Element[] = []
+  const lineElements = []
 
-  const randomColors: string[] = []
+  const randomColors = []
 
   for (let i = 0; i < 50; i++) {
     randomColors.push(randomHexColorCode())

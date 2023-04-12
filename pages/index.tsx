@@ -8,7 +8,7 @@ import Modal from '../components/ModalComponent'
 import Row from '../components/Row'
 import useWindowDimensions from '../hooks/useWindowDimension'
 import parse from 'html-react-parser';
-import Intro from '../intro/Intro'
+import Intro from '../intro/Intro.js'
 import Footer from '../components/Footer'
 // import {arr} from '../personal-info/info'
 
