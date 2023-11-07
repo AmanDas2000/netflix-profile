@@ -222,6 +222,7 @@ export const bestSkills=[
 ]
 
 export const personalDetail={
+  firstName:"Aman",
   name:"Aman Das",
   designation:"Software Developer 1 @ Oracle",
   detail:"I am a full stack developer currently working with great peers at Oracle, constantly learning and evolving at software development and I ❤️ JavaScript.",

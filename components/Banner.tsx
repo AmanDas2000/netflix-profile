@@ -52,7 +52,7 @@ function Banner() {
       <div className='absolute top-[87vh] left-0 w-screen shadow-[inset_0px_-60px_20px_-10px_rgba(20,20,20,1)] h-[10vh] -z-10'></div>
 
       <h1 className="text-2xl text-shadow-md font-bold md:text-4xl lg:text-7xl">
-        Hey! My name is Aman
+        Hey! My name is {personalDetail.firstName}
       </h1>
       <h1 className="text-l md:text-l lg:text-xl">
         {'and I am the developer you need!'}{' '}

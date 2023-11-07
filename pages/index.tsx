@@ -10,7 +10,7 @@ import useWindowDimensions from '../hooks/useWindowDimension'
 import parse from 'html-react-parser';
 import Intro from '../intro/Intro.js'
 import Footer from '../components/Footer'
-import {experience, projects, skills} from '../personal-info/info'
+import {experience, personalDetail, projects, skills} from '../personal-info/info'
 
 
 
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
   return (
     <div className="relative h-screen w-screen">
       <Head>
-        <title>Aman's profile</title>
+        <title>{personalDetail.firstName}'s profile</title>
         <link rel="icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png" />
       </Head>
       {index ? (
