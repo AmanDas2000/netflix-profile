@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import { BellIcon, MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
+import { personalDetail,personalLinks } from '../personal-info/info';
+
 
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -30,11 +32,10 @@ function Header() {
                 className="cursor-pointer object-contain"
             />
         <ul className='hidden space-x-4 md:flex'>
-            <li className='headerLink'>Profile</li>
-            <li className='headerLink'>Resume</li>
-            <li className='headerLink'>LinkedIn</li>
-            <li className='headerLink'>Github</li>
-            <li className='headerLink'>Email</li>
+            <a className='headerLink' href={personalLinks.linkedIn} target='_blank'>LinkedIn</a>
+            <a className='headerLink' href={personalLinks.resume} target='_blank'>Resume</a>
+            <a className='headerLink' href={personalLinks.github} target='_blank'>Github</a>
+            <a className='headerLink' href={`mailto:${personalLinks.email}`} target='_blank'>Email</a>
         </ul>
         </div>
 
@@ -42,15 +43,18 @@ function Header() {
     
         <MagnifyingGlassIcon className='hidden  h-6 w-6 sm:inline'/>
         {/* //collapse to a menu */}
-        <p className='hidden lg:inline'>Make your own</p>
+        <a className='headerLink' href='https://github.com/AmanDas2000/netflix-resume' target='_blank'>Make your own</a>
         <BellIcon className='h-6 w-6'/>
-        <Link href='/account'>
+        
             <img
-                src="https://rb.gy/g1pwyx"
-                alt=""
+                src={personalDetail.imageUrl}
+                // src="https://rb.gy/g1pwyx" //this is default netflix profile icon
+                alt="Aman Das"
                 className="cursor-pointer rounded"
+                width={30}
+                height={30}
             />
-        </Link>
+        
         </div>
     </header>
   )

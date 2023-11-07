@@ -77,7 +77,6 @@
 }
 
 
-
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
@@ -208,6 +207,9 @@
 
 .aman{
   position: absolute;
+  font-size: 20px;
+  color: black;
+  background-color: white;
   top:80%;
 }
 

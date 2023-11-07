@@ -2,14 +2,17 @@ import React,{useState,useEffect} from 'react'
 
 const Intro = () => {
   const [index, setIndex] = useState(false)
+  const [flex, setFlex] = useState(false)
   useEffect(() => {
     const intervalDelayMilliseconds = 3990
     const interval = setInterval(() => {
       setIndex(true)
     }, intervalDelayMilliseconds)
-
     return () => clearInterval(interval)
   })
+
+  
+  
 
   // lets create some random lines width random margins or gaps
   const randomHexColorCode = () => {
@@ -50,7 +53,7 @@ const Intro = () => {
           </div>
           <div className="brush3"></div>
         </div>
-        <div className="aman">btw this took the most time</div>
+        {index?<div className="aman">this was CSS btw,<br/> just saying...</div>:null}
       </div>
     </div>
   )

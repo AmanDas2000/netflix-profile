@@ -1,10 +1,11 @@
 import { InformationCircleIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image'
 import React,{useState,useEffect} from 'react'
-import { FaPlay } from 'react-icons/fa'
+import { PiCoffeeFill } from 'react-icons/pi'
 import {AiOutlineInfoCircle} from 'react-icons/ai'
 import ModalComponent from './ModalComponent'
 import ModalComponentBanner from './ModalComponentBanner'
+import { bestSkills,personalDetail } from '../personal-info/info'
 
 
 
@@ -17,14 +18,12 @@ function Banner() {
     const interval = setInterval(() => {
       setIndex((prevIndex) => {
         // reset index if current index is greater than array size
-        return prevIndex + 1 < arr.length ? prevIndex + 1 : 0;
+        return prevIndex + 1 < bestSkills.length ? prevIndex + 1 : 0;
       });
     }, intervalDelayMilliseconds);
 
     return () => clearInterval(interval);
   });
-
-  const arr=['React','Redux','Node','JavaScript']
 
   const gifs=['https://media2.giphy.com/media/okLCopqw6ElCDnIhuS/giphy.gif?cid=6c09b952kgi4mbf6h3skj5ura17rr5entfc6gcrtkndliw63&rid=giphy.gif&ct=g','https://media.tenor.com/c7IMfMhiHk8AAAAC/sheldon-brain-explode-big-bang-theory.gif','https://media3.giphy.com/media/f3jZ8moRBbEvNJjOtu/giphy.gif','https://media0.giphy.com/media/S6qkS0ETvel6EZat45/giphy.gif']
   
@@ -33,10 +32,10 @@ function Banner() {
       <ModalComponentBanner
         state={modal}
         change={setModal}
-        name={"Aman Das"}
-        designation={"Intern @ Oracle"}
-        detail={"I am a final year student constantly learning and evolving at software development and I ❤️ JavaScript. I have freelance and internship experience with full stack development."}
-        imageUrl={"https://media.licdn.com/dms/image/C5603AQEEQ27cMDodZg/profile-displayphoto-shrink_400_400/0/1629777355069?e=1684368000&v=beta&t=ICj8sOZUgaeUqUClSYE7fxssEBYgMau6xxOEnQJ7pvg"}
+        name={personalDetail.name}
+        designation={personalDetail.designation}
+        detail={personalDetail.detail}
+        imageUrl={personalDetail.imageUrl}
         startDate={''}
         endDate={''}
       />
@@ -61,18 +60,18 @@ function Banner() {
       {/* <p className="animate-pulse max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-2xl lg:text-2xl"> */}
       <div className="max-w-[220px] text-shadow-md text-l md:text-2xl lg:text-2xl ">
         <div className="typewriter text-xl md:text-2xl lg:text-4xl">
-          <h1 key={arr[index]}>{arr[index]}</h1>
+          <h1 key={bestSkills[index]}>{bestSkills[index]}</h1>
         </div>
       </div>
 
       <div className="flex space-x-3 pt-3">
-        {/* <button className="bannerButton bg-white text-black" onClick={()=>{setModal(true)}}>
-          <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" />
+        {/* <button className="modalButton bg-transparent text-white w-[200px]" onClick={()=>{setModal(true)}}>
+          <FaPlay className="h-4 w-4 text-white md:h-7 md:w-7" />
           Play
         </button> */}
 
         <button className="bannerButton bg-white text-black" onClick={() => {setModal(true)}}>
-          <FaPlay className="h-5 w-5 md:h-8 md:w-8" /> coffee?
+          <PiCoffeeFill className="h-5 w-5 md:h-8 md:w-8" /> coffee?
         </button>
       </div>
     </div>

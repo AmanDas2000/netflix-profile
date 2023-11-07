@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FaBook, FaGit, FaPlay } from 'react-icons/fa';
 import parse from 'html-react-parser';
 import {AiFillGithub,AiFillLinkedin,AiFillMail,AiFillProfile,AiOutlineClose} from 'react-icons/ai'
+import { personalLinks } from '../personal-info/info';
 
 
 interface Props {
@@ -60,32 +61,35 @@ function ModalComponentBanner({state,change,name,designation,detail,imageUrl,sta
               ) : null}
             </div>
 
-            <p className="pl-2 pb-2 pt-2 max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-l lg:text-l">
+            <p className="pl-2 pb-6 pt-2 max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-l lg:text-l">
               {designation}
             </p>
+            
             <p
               className="pl-2 text-xs text-shadow-md md:text-base lg:max-w-l lg:text-l"
               style={{ lineHeight: '1.65rem' }}
             >
               {parse(detail)}
             </p>
+            
             <div className="flex w-full md:w-[90%] pl-2 pt-7 justify-between text-center text-xs">
-              <div className="flex flex-col cursor-pointer hover:scale-105">
-                <AiFillGithub size={40} />
-                <p>Github</p>
-              </div>
-              <div className="flex flex-col cursor-pointer hover:scale-105">
+            <a href={personalLinks.linkedIn} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
                 <AiFillLinkedin size={40} />
                 <p>LinkedIn</p>
-              </div>
-              <div className="flex flex-col cursor-pointer hover:scale-105">
-                <AiFillMail size={40} />
-                <p>Email</p>
-              </div>
-              <div className="flex flex-col cursor-pointer hover:scale-105">
+              </div></a>
+            <a href={personalLinks.resume} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
                 <AiFillProfile size={40} />
                 <p>Resume</p>
-              </div>
+              </div></a>
+            <a href={personalLinks.github} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
+                <AiFillGithub size={40} />
+                <p>Github</p>
+              </div></a>
+            <a href={`mailto:${personalLinks.email}`} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
+                <AiFillMail size={40} />
+                <p>Email</p>
+              </div></a>
+            
             </div>
           </div>
         </div>
