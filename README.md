@@ -4,7 +4,7 @@
 
 [🚀live demo](https://main--cute-queijadas-25ee96.netlify.app/)
 
-Make your own netflix profile page:
+## Make your own netflix profile page:
 
 1️. fork this project.<br/>
 2️. go to personal-info > info.js.<br/>
