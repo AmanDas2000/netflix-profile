@@ -1,6 +1,8 @@
 # netflix-resume
 
-Welcome to NETFLIX Profile.
+Welcome to NETFLIX Profile. 🍻
+
+[🚀live demo](https://main--cute-queijadas-25ee96.netlify.app/)
 
 Make your own netflix profile page:
 1. fork this project.
