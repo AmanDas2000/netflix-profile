@@ -14,7 +14,7 @@ function CircularThumbnail({name,designation,detail,imageUrl,id}:Props) {
     
   return (
     <div>
-      <div className="flex justify-end min-w-[9rem] md:min-w-[13rem] align-middle overflow-y-clip">
+      <div className="h-24 w-24 md:h-36 md:w-36 flex justify-end min-w-[9rem] md:min-w-[13rem] align-middle overflow-y-clip">
         <div>
           <h1 className="leading-[6rem] text-[7.5rem] md:text-[10.5rem] font-outline-2 text-black font-bold md:leading-[8rem]">
             {id}
