@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
             <Banner />
 
-            <section className="md:space-y-24">
+            <section className="md:space-y-28">
               <Row title={'Experience'} movies={experience} type='square'/>
               <Row title={'Skills'} movies={skills} type='circle'/>
               <Row title={'Projects'} movies={projects} type='square'/>
