@@ -16,9 +16,10 @@ interface Props {
   imageUrl:string
   startDate:string
   endDate:string
+  source:string
 }
 
-function ModalComponent({state,change,name,designation,detail,imageUrl,startDate,endDate}:Props) {
+function ModalComponent({state,change,name,designation,detail,imageUrl,startDate,endDate,source}:Props) {
   
   return (
     <Modal

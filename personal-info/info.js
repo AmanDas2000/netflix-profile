@@ -5,16 +5,16 @@ export const experience = [
     detail: `• Worked on adding redundancy testing functionality to the unified test platform which was build during my internship<br/>
     • designed and created new structure which would allow more methods of testing to be added<br/>
     • worked on the UI for the same and made that modula<br/>
-    • well, its going great here`,
+    • well, its going great here 😊`,
     imageUrl:
       'https://imageio.forbes.com/specials-images/imageserve/5ff3492e056b3292f9c39749/0x0.jpg?format=jpg&width=1200',
-    startDate:'Jan 23',
+    startDate:'Aug 23',
   endDate:'Present'
   },
   {
     name: 'Oracle',
     designation: 'Software Engineering Intern',
-    detail: `• Build the "Robot-server" which provides a all-in-one test running platform.<br/>
+    detail: `• Build the all-in-one test running platform.<br/>
     • Created the UI which facilitates to check multiple microservices.<br/>
     • Worked on the Vendor-side simulation tool which improves delivery times by 1 to 2 months.<br/>
     • Deployed the entire simulation tool and the robot-server as a microservice using Docker and Kubernetes.<br/>
@@ -22,7 +22,7 @@ export const experience = [
     imageUrl:
       'https://imageio.forbes.com/specials-images/imageserve/5ff3492e056b3292f9c39749/0x0.jpg?format=jpg&width=1200',
     startDate:'Jan 23',
-  endDate:'Present'
+  endDate:'Jul 23'
   },
   {
     name: 'Spenny (YC 2020)',
