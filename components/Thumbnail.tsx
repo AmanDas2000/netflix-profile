@@ -10,9 +10,10 @@ interface Props {
     imageUrl:string
     startDate:string
     endDate:string
+    source:string
 }
 
-function Thumbnail({name,designation,detail,imageUrl,startDate,endDate}:Props) {
+function Thumbnail({name,designation,detail,imageUrl,startDate,endDate,source}:Props) {
     const [modal, setModal] = React.useState(false);
   return (
     <div>
@@ -25,6 +26,7 @@ function Thumbnail({name,designation,detail,imageUrl,startDate,endDate}:Props) {
         imageUrl={imageUrl}
         startDate={startDate}
         endDate={endDate}
+        source={source}
       />
 
       <div
