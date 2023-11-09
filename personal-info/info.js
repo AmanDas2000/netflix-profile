@@ -6,7 +6,7 @@ export const experience = [
     • designed and created new structure which would allow more methods of testing to be added<br/>
     • worked on the UI for the same and made that modula`,
     imageUrl:
-      'https://imageio.forbes.com/specials-images/imageserve/5ff3492e056b3292f9c39749/0x0.jpg?format=jpg&width=1200',
+      'https://www.oracle.com/a/ocom/img/logo-950x500.png',
     startDate:'Aug 23',
   endDate:'Present'
   },
@@ -19,7 +19,7 @@ export const experience = [
     • Deployed the entire simulation tool and the robot-server as a microservice using Docker and Kubernetes.<br/>
     • The languages used in the above projects include Python, Java and robot-framework<br/>`,
     imageUrl:
-      'https://imageio.forbes.com/specials-images/imageserve/5ff3492e056b3292f9c39749/0x0.jpg?format=jpg&width=1200',
+      'https://www.oracle.com/a/ocom/img/logo-950x500.png',
     startDate:'Jan 23',
   endDate:'Jul 23'
   },
@@ -37,7 +37,7 @@ export const experience = [
     • Implemented production level purchase and sell rest APIs with node.js and express<br/>
     • Worked on baskets and SIP module<br/>`,
     imageUrl:
-      'https://i.ytimg.com/vi/h8d70SFOqZ4/maxresdefault.jpg',
+      'https://gumlet.assettype.com/freepressjournal/2023-06/ea50ff1a-4f04-4965-a4d7-07a388be6549/Untitled_design__9_.png',
       startDate:'Mar 21',
       endDate:'Arp 22'
     },
