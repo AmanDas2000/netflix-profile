@@ -88,7 +88,7 @@ export const projects = [
     • Completely responsive profile page styled like netflix which anyone can use<br/>
     • Created netflix intro animation with CSS and JS<br/>
     • Technologies: Next, React, Tailwind CSS<br/><br/>
-    <a className='membershipLink' href='https://github.com/AmanDas2000/netflix-resume' target=”_blank”>🤓 Source Code</a>`,
+    <a className='membershipLink' href='https://github.com/AmanDas2000/netflix-profile' target=”_blank”>🤓 Source Code</a>`,
     imageUrl:
       'https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940',
     // startDate:'Jan 23',
