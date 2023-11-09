@@ -4,8 +4,7 @@ export const experience = [
     designation: 'Software Developer 1',
     detail: `• Worked on adding redundancy testing functionality to the unified test platform which was build during my internship<br/>
     • designed and created new structure which would allow more methods of testing to be added<br/>
-    • worked on the UI for the same and made that modula<br/>
-    • well, its going great here 😊`,
+    • worked on the UI for the same and made that modula`,
     imageUrl:
       'https://imageio.forbes.com/specials-images/imageserve/5ff3492e056b3292f9c39749/0x0.jpg?format=jpg&width=1200',
     startDate:'Aug 23',
@@ -25,10 +24,9 @@ export const experience = [
   endDate:'Jul 23'
   },
   {
-    name: 'Spenny (YC 2020)',
+    name: 'Spenny (aquired by CRED)',
     designation: 'Full stack Intern',
     detail: `
-    [aquired by CRED]<br/>
     Front-end<br/>
     • Developed complete gold purchase website from scratch.<br/>
     • Handled authentication, gold purchase APIs, payments and edge cases using Nextjs, React and Redux<br/>
@@ -87,6 +85,8 @@ export const projects = [
     name: 'Netflix Profile',
     designation: 'THIS',
     detail: `• You are already viewing it<br/>
+    • Completely responsive profile page styled like netflix which anyone can use<br/>
+    • Created netflix intro animation with CSS and JS<br/>
     • Technologies: Next, React, Tailwind CSS<br/><br/>
     <a className='membershipLink' href='https://github.com/AmanDas2000/netflix-resume' target=”_blank”>🤓 Source Code</a>`,
     imageUrl:
