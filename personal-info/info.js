@@ -45,8 +45,8 @@ export const experience = [
     • Worked on baskets and SIP module<br/>`,
     imageUrl:
       'https://gumlet.assettype.com/freepressjournal/2023-06/ea50ff1a-4f04-4965-a4d7-07a388be6549/Untitled_design__9_.png',
-      startDate:'Mar 21',
-      endDate:'Arp 22'
+      startDate:'Nov \'21',
+      endDate:'Apr \'22'
     },
   {
     name: 'Flodata Analytics',
@@ -56,8 +56,8 @@ export const experience = [
     • Developed US ancestry map dashboard using AnyCharts and vanilla JavaSfcript<br/>`,
     imageUrl:
       'https://media.licdn.com/dms/image/C4D16AQH3A6VmJZoutQ/profile-displaybackgroundimage-shrink_200_800/0/1654535134753?e=2147483647&v=beta&t=oFfzbVd319269JS3IDNbstPjMpuwST0zlgieIIabnzY',
-      startDate:'Mar 21',
-  endDate:'Arp 22'
+      startDate:'Jun \'21',
+  endDate:'Jul \'21'
   },
   {
     name: 'Disorder of Creation',
@@ -70,7 +70,7 @@ export const experience = [
     imageUrl:
       'https://cdn.shopify.com/s/files/1/2617/4984/collections/Disorder_of_Creation_1200x1200.jpg?v=1668494770',
       startDate:'Mar 21',
-  endDate:'Arp 22'
+  endDate:'Dec 21'
   },
   {
     name: 'Laptop Nerd',
@@ -82,7 +82,7 @@ export const experience = [
     imageUrl:
       'https://laptopnerd.in/wp-content/uploads/2022/07/All-reviewsallTopLaptops.png',
       startDate:'Mar 21',
-  endDate:'Arp 22'
+  endDate:'Present'
   },
   
 ]
