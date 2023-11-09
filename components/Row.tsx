@@ -57,6 +57,7 @@ function Row({ title, movies, type }: Props) {
                     imageUrl: string
                     startDate: string
                     endDate:string
+                    source:string
                   },
                   i: any
                 ) => (
@@ -66,6 +67,7 @@ function Row({ title, movies, type }: Props) {
                     detail={e.detail}
                     imageUrl={e.imageUrl}
                     key={i}
+                    source={e.source}
                     startDate={e.startDate}
                     endDate={e.endDate}
                   />
