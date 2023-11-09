@@ -1,3 +1,10 @@
+export const rowsYouWant={
+  experience:true,
+  skills:true,
+  projects:true,
+  achievements:false
+}
+
 export const experience = [
   {
     name: 'Oracle',
@@ -160,6 +167,36 @@ export const projects = [
       'https://elegant-brahmagupta-1d891b.netlify.app/images/2.png',
       // startDate:'Mar 21',
   // endDate:'Arp 22'
+  },
+  
+]
+
+export const achievements = [
+  {
+    name: '5star coder in codeforce',
+    designation: 'expert',
+    detail: `something about expert coder and ranks and links`,
+    imageUrl:
+      'https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940',
+    // startDate:'Jan 23',
+  // endDate:'Present'
+  },
+  {
+    name: '5star coder in codeforce',
+    designation: 'expert',
+    detail: `something about expert coder and ranks and links`,
+    imageUrl:
+      'https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940',
+    // startDate:'Jan 23',
+  // endDate:'Present'
+  },{
+    name: '5star coder in codeforce',
+    designation: 'expert',
+    detail: `something about expert coder and ranks and links`,
+    imageUrl:
+      'https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940',
+    // startDate:'Jan 23',
+  // endDate:'Present'
   },
   
 ]

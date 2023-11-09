@@ -44,7 +44,8 @@ function Header() {
         <MagnifyingGlassIcon className='hidden  h-6 w-6 sm:inline'/>
         {/* //collapse to a menu */}
         <a className='headerLink' href='https://github.com/AmanDas2000/netflix-profile' target='_blank'>Make your own</a>
-        <BellIcon className='h-6 w-6'/>
+        <a className='headerLink' href='https://www.linkedin.com/in/amandas7/' target='_blank'>created by Aman Das</a>
+        {/* <BellIcon className='h-6 w-6'/> */}
         
             <img
                 src={personalDetail.imageUrl}

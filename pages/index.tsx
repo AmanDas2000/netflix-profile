@@ -10,7 +10,7 @@ import useWindowDimensions from '../hooks/useWindowDimension'
 import parse from 'html-react-parser';
 import Intro from '../intro/Intro.js'
 import Footer from '../components/Footer'
-import {experience, personalDetail, projects, skills} from '../personal-info/info'
+import {experience, personalDetail, projects, skills,rowsYouWant,achievements} from '../personal-info/info'
 
 
 
@@ -44,9 +44,10 @@ const Home: NextPage = () => {
             <Banner />
 
             <section className="md:space-y-28">
-              <Row title={'Experience'} movies={experience} type='square'/>
-              <Row title={'Skills'} movies={skills} type='circle'/>
-              <Row title={'Projects'} movies={projects} type='square'/>
+              {rowsYouWant.experience?<Row title={'Experience'} movies={experience} type='square'/>:null}
+              {rowsYouWant.skills?<Row title={'Skills'} movies={skills} type='circle'/>:null}
+              {rowsYouWant.projects?<Row title={'Projects'} movies={projects} type='square'/>:null}
+              {rowsYouWant.achievements?<Row title={'Achievements'} movies={achievements} type='square'/>:null}
               
 
             </section>

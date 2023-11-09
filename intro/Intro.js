@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 
 const Intro = () => {
   const [index, setIndex] = useState(false)
-  const [flex, setFlex] = useState(false)
+  
   useEffect(() => {
     const intervalDelayMilliseconds = 3990
     const interval = setInterval(() => {
@@ -11,10 +11,6 @@ const Intro = () => {
     return () => clearInterval(interval)
   })
 
-  
-  
-
-  // lets create some random lines width random margins or gaps
   const randomHexColorCode = () => {
     let n = (Math.random() * 0xfffff * 1000000).toString(16)
     return '#' + n.slice(0, 6)
