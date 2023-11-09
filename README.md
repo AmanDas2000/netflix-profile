@@ -1,9 +1,13 @@
 # netflix-resume
 
-Welcome to NETFLIX Profile.
+🍻 Welcome to NETFLIX Profile. 🍻
 
-Make your own netflix profile page:
-1. fork this project.
-2. go to personal-info>info.js.
-3. give all the required details and links.
-4. voila!! your page is ready and can be deployed.
+[🚀live demo](https://main--cute-queijadas-25ee96.netlify.app/)
+
+## Make your own netflix profile page:
+
+1️. fork this project.<br/>
+2️. go to personal-info > info.js.<br/>
+3️. give all the required details and links.<br/>
+4️. voila!! your page is ready and can be deployed.<br/>
+
