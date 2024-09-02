@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import Image from 'next/image';
 import { BellIcon, MagnifyingGlassIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
 import { personalDetail,personalLinks } from '../personal-info/info';
@@ -46,15 +47,14 @@ function Header() {
         <a className='headerLink' href='https://github.com/AmanDas2000/netflix-profile' target='_blank'>Make your own</a>
         <a className='headerLink' href='https://www.linkedin.com/in/amandas7/' target='_blank'>created by Aman Das</a>
         {/* <BellIcon className='h-6 w-6'/> */}
-        
-            <img
-                src={personalDetail.imageUrl}
+            <Image
                 // src="https://rb.gy/g1pwyx" //this is default netflix profile icon
+                src={personalDetail.imageUrl}
+                className="object-cover rounded-[30px]"
                 alt="Aman Das"
-                className="cursor-pointer rounded"
                 width={30}
                 height={30}
-            />
+              />
         
         </div>
     </header>
