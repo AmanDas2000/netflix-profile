@@ -266,7 +266,7 @@ export const personalDetail={
   name:"Aman Das",
   designation:"Software Developer 1 @ Oracle",
   detail:"I am a full stack developer currently working with great peers at Oracle, constantly learning and evolving at software development and I ❤️ JavaScript.",
-  imageUrl:"https://photos.google.com/share/AF1QipMbITIPLOqbEt-R2thkoSX7g-DXy9ZfUrzh7Qx7zB-1fxxSqYn6FaR81pwyAOycqQ/photo/AF1QipOsiFdqnolwQl8rdYCVp6UUayCZvogQ5fhtZVkS?key=d002YjRVOFc0UENlUXZGNURsdTQwWWswRUg3d3Zn"
+  imageUrl:"https://instagram.fhyd2-2.fna.fbcdn.net/v/t51.2885-19/433991940_7209001492530819_7588030055608565208_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhyd2-2.fna.fbcdn.net&_nc_cat=103&_nc_ohc=nPznYh1nNPgQ7kNvgHEqFWK&_nc_gid=30db79bfa1c446fbb94e36bb5bee0838&edm=APoiHPcBAAAA&ccb=7-5&oh=00_AYAUoaUFSw4utBDVAIXfeNq6RcCyrbltlxRrppUQCPTN_g&oe=67525CDD&_nc_sid=22de04"
 }
 
 export const personalLinks={
