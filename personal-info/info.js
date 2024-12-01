@@ -9,9 +9,12 @@ export const experience = [
   {
     name: 'Oracle',
     designation: 'Software Developer 1',
-    detail: `• Worked on adding redundancy testing functionality to the unified test platform which was build during my internship<br/>
-    • designed and created new structure which would allow more methods of testing to be added<br/>
-    • worked on the UI for the same and made that modula`,
+    detail: `• Made the trap aggregator microservice real-time by establishing new threads and used mutex-locks to make it thread-safe and
+    consistent as the service handles millions of entries per week.<br/>
+    • working on unified solutions which combines 2 major products in the company in a modular fashion which can result in reducing
+    delivery times by more than 100%.<br/>
+    • worked on adding redundancy testing functionality to the test platform which was developed during my internship.<br/>
+    • Eltablished real-time robot-logs on UI of testing platform using web-sockets.<br/>`,
     imageUrl:
       'https://www.oracle.com/a/ocom/img/logo-950x500.png',
     startDate:'Aug 23',
