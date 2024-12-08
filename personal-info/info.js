@@ -272,6 +272,6 @@ export const personalDetail={
 export const personalLinks={
   github:"https://github.com/amandas2000",
   linkedIn:"https://www.linkedin.com/in/amandas7/",
-  resume:"https://drive.google.com/file/d/1-TcF4vljDHRsFmEFEc3hZIeeE7DukE73/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/1Lkf8v-Lhzr1UfOs2oL189yKwbqzOYoKY/view?usp=sharing",
   email:"das.aman45@gamil.com"
 }
