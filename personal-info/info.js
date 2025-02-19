@@ -266,7 +266,7 @@ export const personalDetail={
   name:"Aman Das",
   designation:"Software Developer 1 @ Oracle",
   detail:"I am a full stack developer currently working with great peers at Oracle, constantly learning and evolving at software development and I ❤️ JavaScript.",
-  imageUrl:"https://instagram.fhyd2-2.fna.fbcdn.net/v/t51.2885-19/433991940_7209001492530819_7588030055608565208_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhyd2-2.fna.fbcdn.net&_nc_cat=103&_nc_ohc=nPznYh1nNPgQ7kNvgHEqFWK&_nc_gid=30db79bfa1c446fbb94e36bb5bee0838&edm=APoiHPcBAAAA&ccb=7-5&oh=00_AYAUoaUFSw4utBDVAIXfeNq6RcCyrbltlxRrppUQCPTN_g&oe=67525CDD&_nc_sid=22de04"
+  imageUrl:"https://instagram.fhyd2-2.fna.fbcdn.net/v/t51.2885-19/433991940_7209001492530819_7588030055608565208_n.jpg?_nc_ht=instagram.fhyd2-2.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2AEabaz1mbTP5J5mIX2pyF-0Sx7nxFPlP90foMNUplNvCgKLJ1CcSnOQFXjiPa5N7r-P7Z_Q-eiloikx7B4-w1HV&_nc_ohc=ahkV6YA2F-gQ7kNvgGPZKfH&_nc_gid=39b27f7435c94a329b95f48bfe607c5a&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYAV2AfosGmbeTKFVr5QmTt7dD5vXcbI5vChlDz4ljxYZQ&oe=67BBD4DD&_nc_sid=7a9f4b"
 }
 
 export const personalLinks={
