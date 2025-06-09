@@ -37,7 +37,7 @@ const Intro = () => {
   return (
     <div>
       <div className="background">
-      {index?<div className="aman">this was CSS btw</div>:null}
+      {/* {index?<div className="aman">this was CSS btw</div>:null} */}
         <div className="logo">
           <div className="brush1">
             <div className="color"></div>

@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../components/Banner'
@@ -10,13 +10,11 @@ import useWindowDimensions from '../hooks/useWindowDimension'
 import parse from 'html-react-parser';
 import Intro from '../intro/Intro.js'
 import Footer from '../components/Footer'
-import {experience, personalDetail, projects, skills,rowsYouWant,achievements} from '../personal-info/info'
-
-
+import { experience, personalDetail, projects, skills, rowsYouWant, achievements } from '../personal-info/info'
 
 
 const Home: NextPage = () => {
-  
+
 
   const [index, setIndex] = useState(true);
   useEffect(() => {
@@ -28,7 +26,6 @@ const Home: NextPage = () => {
     return () => clearInterval(interval);
   });
 
-  
   return (
     <div className="relative h-screen w-screen">
       <Head>
@@ -42,17 +39,17 @@ const Home: NextPage = () => {
           <Header />
           <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
             <Banner />
-
             <section className="md:space-y-28">
-              {rowsYouWant.experience?<Row title={'Experience'} movies={experience} type='square'/>:null}
-              {rowsYouWant.skills?<Row title={'Skills'} movies={skills} type='circle'/>:null}
-              {rowsYouWant.projects?<Row title={'Projects'} movies={projects} type='square'/>:null}
-              {rowsYouWant.achievements?<Row title={'Achievements'} movies={achievements} type='square'/>:null}
               
+              {rowsYouWant.experience ? <Row title={'Experience'} movies={experience} type='square' /> : null}
+              {rowsYouWant.skills ? <Row title={'Skills'} movies={skills} type='circle' /> : null}
+              {rowsYouWant.projects ? <Row title={'Projects'} movies={projects} type='square' /> : null}
+              {rowsYouWant.achievements ? <Row title={'Achievements'} movies={achievements} type='square' /> : null}
+
 
             </section>
           </main>
-          <Footer/>
+          <Footer />
         </div>
       )}
     </div>

@@ -4,7 +4,8 @@ import Modal from '@mui/material/Modal';
 import Image from 'next/image';
 import { FaBook, FaGit, FaPlay } from 'react-icons/fa';
 import parse from 'html-react-parser';
-import {AiFillGithub,AiFillLinkedin,AiFillMail,AiFillProfile,AiOutlineClose} from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin, AiFillMail, AiFillProfile, AiOutlineClose } from 'react-icons/ai'
+import { SiLeetcode } from "react-icons/si";
 import { personalLinks } from '../personal-info/info';
 
 
@@ -12,15 +13,15 @@ interface Props {
   state: boolean
   change: Function
   name: string
-  designation:string
-  detail: string 
-  imageUrl:string
-  startDate:string
-  endDate:string
+  designation: string
+  detail: string
+  imageUrl: string
+  startDate: string
+  endDate: string
 }
 
-function ModalComponentBanner({state,change,name,designation,detail,imageUrl,startDate,endDate}:Props) {
-  
+function ModalComponentBanner({ state, change, name, designation, detail, imageUrl, startDate, endDate }: Props) {
+
   return (
     <Modal
       open={state}
@@ -64,32 +65,37 @@ function ModalComponentBanner({state,change,name,designation,detail,imageUrl,sta
             <p className="pl-2 pb-6 pt-2 max-w-xs text-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-l lg:text-l">
               {designation}
             </p>
-            
+
             <p
               className="pl-2 text-xs text-shadow-md md:text-base lg:max-w-l lg:text-l"
               style={{ lineHeight: '1.65rem' }}
             >
               {parse(detail)}
             </p>
-            
+
             <div className="flex w-full md:w-[90%] pl-2 pt-7 justify-between text-center text-xs">
-            <a href={personalLinks.linkedIn} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
-                <AiFillLinkedin size={40} />
+              <a href={personalLinks.linkedIn} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
+                <AiFillLinkedin size={38} />
                 <p>LinkedIn</p>
               </div></a>
-            <a href={personalLinks.resume} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
-                <AiFillProfile size={40} />
+              <a href={personalLinks.resume} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
+                <AiFillProfile size={38} />
                 <p>Resume</p>
               </div></a>
-            <a href={personalLinks.github} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
-                <AiFillGithub size={40} />
+              <a href={personalLinks.leetCode} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
+                <SiLeetcode size={38} />
+                <p>Leetcode</p>
+              </div></a>
+              <a href={personalLinks.github} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
+                <AiFillGithub size={38} />
                 <p>Github</p>
               </div></a>
-            <a href={`mailto:${personalLinks.email}`} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
-                <AiFillMail size={40} />
+              <a href={`mailto:${personalLinks.email}`} target='_blank'><div className="flex flex-col cursor-pointer hover:scale-105">
+                <AiFillMail size={38} />
                 <p>Email</p>
               </div></a>
-            
+              
+
             </div>
           </div>
         </div>

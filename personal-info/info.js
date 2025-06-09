@@ -9,7 +9,7 @@ export const experience = [
   {
     name: 'Oracle',
     designation: 'Software Developer 1',
-    detail: `• Made the trap aggregator microservice real-time by establishing new threads and used mutex-locks to make it thread-safe and
+    detail: `• Made the aggregator microservice real-time by establishing new threads and used mutex-locks to make it thread-safe and
     consistent as the service handles millions of entries per week.<br/>
     • working on unified solutions which combines 2 major products in the company in a modular fashion which can result in reducing
     delivery times by more than 100%.<br/>
@@ -266,12 +266,14 @@ export const personalDetail={
   name:"Aman Das",
   designation:"Software Developer 1 @ Oracle",
   detail:"I am a full stack developer currently working with great peers at Oracle, constantly learning and evolving at software development and I ❤️ JavaScript.",
-  imageUrl:"https://instagram.fhyd2-2.fna.fbcdn.net/v/t51.2885-19/433991940_7209001492530819_7588030055608565208_n.jpg?_nc_ht=instagram.fhyd2-2.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2AEabaz1mbTP5J5mIX2pyF-0Sx7nxFPlP90foMNUplNvCgKLJ1CcSnOQFXjiPa5N7r-P7Z_Q-eiloikx7B4-w1HV&_nc_ohc=ahkV6YA2F-gQ7kNvgGPZKfH&_nc_gid=39b27f7435c94a329b95f48bfe607c5a&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AYAV2AfosGmbeTKFVr5QmTt7dD5vXcbI5vChlDz4ljxYZQ&oe=67BBD4DD&_nc_sid=7a9f4b"
+  imageUrl:"https://ik.imagekit.io/3swcompt9/7dc366cb-81ac-4da7-96c4-05d598c7b180~1.jpg?updatedAt=1749451824147",
+  leetCodeUserName:'aman__das'
 }
 
 export const personalLinks={
   github:"https://github.com/amandas2000",
   linkedIn:"https://www.linkedin.com/in/amandas7/",
   resume:"https://drive.google.com/file/d/1Lkf8v-Lhzr1UfOs2oL189yKwbqzOYoKY/view?usp=sharing",
-  email:"das.aman45@gamil.com"
+  email:"das.aman45@gamil.com",
+  leetCode:'https://leetcode.com/u/aman__das/',
 }

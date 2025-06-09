@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiFillGithub,AiFillLinkedin,AiFillMail,AiFillProfile,AiOutlineClose} from 'react-icons/ai'
+import { SiLeetcode } from "react-icons/si";
 import { personalLinks } from '../personal-info/info'
 
 
@@ -17,6 +18,10 @@ const Footer = () => {
             <a href={personalLinks.resume} target='_blank'><div className="flex cursor-pointer hover:scale-105">
                 <AiFillProfile size={20} />
                 <p>‎ Resume</p>
+              </div></a>
+            <a href={personalLinks.leetCode} target='_blank'><div className="flex cursor-pointer hover:scale-105">
+                <SiLeetcode size={20} />
+                <p>‎ Leetcode</p>
               </div></a>
             <a href={personalLinks.github} target='_blank'><div className="flex cursor-pointer hover:scale-105">
                 <AiFillGithub size={20} />

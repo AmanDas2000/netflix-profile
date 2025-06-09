@@ -35,6 +35,7 @@ function Header() {
         <ul className='hidden space-x-4 md:flex'>
             <a className='headerLink' href={personalLinks.linkedIn} target='_blank'>LinkedIn</a>
             <a className='headerLink' href={personalLinks.resume} target='_blank'>Resume</a>
+            <a className='headerLink' href={personalLinks.leetCode} target='_blank'>Leetcode</a>
             <a className='headerLink' href={personalLinks.github} target='_blank'>Github</a>
             <a className='headerLink' href={`mailto:${personalLinks.email}`} target='_blank'>Email</a>
         </ul>
