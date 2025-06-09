@@ -34,7 +34,7 @@ export const experience = [
   endDate:'Jul 23'
   },
   {
-    name: 'Spenny (aquired by CRED)',
+    name: 'Spenny(aquired by CRED)',
     designation: 'Full stack Intern',
     detail: `
     Front-end<br/>
