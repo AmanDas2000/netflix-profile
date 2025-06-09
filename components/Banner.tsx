@@ -6,7 +6,6 @@ import { AiOutlineInfoCircle } from 'react-icons/ai'
 import ModalComponent from './ModalComponent'
 import ModalComponentBanner from './ModalComponentBanner'
 import { bestSkills, personalDetail } from '../personal-info/info'
-import LeetCodeTieredCircleWithLegend from './LeetCode';
 import LeetCodeHeatmap from './LeetCodeStatsCard'
 
 const leetCodeHeatmapTheme = {
