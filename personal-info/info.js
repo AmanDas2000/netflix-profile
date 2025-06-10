@@ -78,7 +78,7 @@ export const experience = [
   {
     name: 'Laptop Nerd',
     designation: 'Founder',
-    detail: `• Laptopnerd is a laptop review and information website.<a className='membershipLink' href='https://laptopnerd.in'>link</a><br/>
+    detail: `• Laptopnerd is a laptop review and information website.<br/>
     • 10+ articles are ranked on Google’s front page. 20+ articles are on 2nd page on Google.<br/>
     • Designed complete UI/UX from scratch.<br/>
     • Managing on-page and off-page SEO. Leading the team and handling smooth running of the website.<br/>`,
@@ -273,7 +273,7 @@ export const personalDetail={
 export const personalLinks={
   github:"https://github.com/amandas2000",
   linkedIn:"https://www.linkedin.com/in/amandas7/",
-  resume:"https://drive.google.com/file/d/1Lkf8v-Lhzr1UfOs2oL189yKwbqzOYoKY/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/1TehMwkFx-4VqcxrvVqtuJFuvziD69J5m/view",
   email:"das.aman45@gamil.com",
   leetCode:'https://leetcode.com/u/aman__das/',
 }
